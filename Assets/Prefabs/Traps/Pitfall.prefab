@@ -242,7 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldownTime: 0
   myAnimator: {fileID: 1845710235973252070}
-  myButton: {fileID: 0}
+  myButton: {fileID: 274841946087855404}
   FailTime: 5
 --- !u!61 &1845710235973252059
 BoxCollider2D:
@@ -337,6 +337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrapButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1425524219240978637, guid: e3e27a10385baaa439465177e613c82a,
+        type: 3}
+      propertyPath: myTrap
+      value: 
+      objectReference: {fileID: 1845710235973252071}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e27a10385baaa439465177e613c82a, type: 3}
 --- !u!4 &274841946087855393 stripped
@@ -345,3 +350,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1159701036250861025}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &274841946087855404 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1425524219240978637, guid: e3e27a10385baaa439465177e613c82a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1159701036250861025}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e5be0b3cbab9b34db7ee2af5f57c25d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
