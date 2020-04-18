@@ -145,5 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  swoosh: {fileID: 506150849824808967, guid: 47732594648638741957082407c8d649, type: 3}
+  blood: {fileID: 8113012857638759148, guid: d9849b1221c170947982525eb073fa50, type: 3}
   speed: 1
-  immuneToTraps: 

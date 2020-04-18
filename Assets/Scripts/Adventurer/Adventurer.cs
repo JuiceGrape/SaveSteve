@@ -14,6 +14,9 @@ public class Adventurer : MonoBehaviour
 {
     public AdventurerType type;
 
+    public GameObject swoosh;
+    public GameObject blood;
+
     public float speed = 1;
 
     bool isMoving = true;
@@ -28,7 +31,7 @@ public class Adventurer : MonoBehaviour
 
     public void AttackedByTrap()
     {
-        Destroy(gameObject);
+        Die();
     }
 
     public void AttackSteve(Steve steve)
@@ -43,16 +46,23 @@ public class Adventurer : MonoBehaviour
         StartCoroutine(DestroyAfter(0.5f));
     }
 
+    public void Die()
+    {
+        Instantiate(blood, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
+
 
     
     private IEnumerator DestroyAfter(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        Destroy(gameObject);
+        Die();
     }
 
     private IEnumerator KillSteve(float seconds, Steve steve)
     {
+        Instantiate(swoosh, transform.position + new Vector3(0.5f, 0, 0), Quaternion.identity);
         yield return new WaitForSeconds(seconds);
         steve.OnDeath();
     }
