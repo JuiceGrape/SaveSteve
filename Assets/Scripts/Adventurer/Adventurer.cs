@@ -4,7 +4,9 @@ using UnityEngine;
 
 public enum AdventurerType
 {
-    BASIC
+    BLUE,
+    GREEN,
+    PURPLE
 }
 
 public class Adventurer : MonoBehaviour
@@ -15,23 +17,30 @@ public class Adventurer : MonoBehaviour
     [SerializeField]
     private List<TrapType> immuneToTraps;
 
+    bool isMoving = true;
+
     private void FixedUpdate() 
     {
-        this.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
+        if (isMoving)
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
+        else
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
     }
 
     public void AttackedByTrap(TrapType trapType)
     {
-
+        Destroy(gameObject);
     }
 
     public void AttackSteve(Steve steve)
     {
-
+        isMoving = false;
+        StartCoroutine(KillSteve(0.5f, steve));
     }
 
     public void GetConsumed(Steve steve)
     {
+        isMoving = false;
         StartCoroutine(DestroyAfter(0.5f));
     }
 
@@ -41,5 +50,11 @@ public class Adventurer : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         Destroy(gameObject);
+    }
+
+    private IEnumerator KillSteve(float seconds, Steve steve)
+    {
+        yield return new WaitForSeconds(seconds);
+        steve.OnDeath();
     }
 }

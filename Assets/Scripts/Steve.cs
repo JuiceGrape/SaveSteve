@@ -26,7 +26,7 @@ public class Steve : MonoBehaviour
         }
     }
 
-    void OnDeath()
+    public void OnDeath()
     {
         animator.SetTrigger("Dead");
     }
@@ -38,7 +38,6 @@ public class Steve : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        Debug.Log("ey");
         Adventurer enemy = other.GetComponent<Adventurer>();
 
         if (enemy == null)
@@ -51,6 +50,10 @@ public class Steve : MonoBehaviour
             enemy.GetConsumed(this);
             OnChomp();
             HungerList.Remove(enemy.type);
+        }
+        else
+        {
+            enemy.AttackSteve(this);
         }
     }
 }

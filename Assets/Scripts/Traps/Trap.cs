@@ -34,11 +34,18 @@ public class Trap : MonoBehaviour
         myCollider.enabled = true;
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
         myCollider.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Hit");
         if (collision.GetComponent<Adventurer>())
         {
             collision.GetComponent<Adventurer>().AttackedByTrap(trapType);
