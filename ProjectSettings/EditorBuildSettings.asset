@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TrapTest.unity
+    guid: 6d94d7a2d441a7343b78cdfe000f4607
   m_configObjects: {}
