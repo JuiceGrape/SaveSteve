@@ -5,11 +5,13 @@ using UnityEngine;
 public class Steve : MonoBehaviour
 {
     public List<AdventurerType> HungerList;
+    public HungerBubble bubble;
     Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         animator = this.GetComponent<Animator>();
+        bubble.Populate(this);
     }
 
     // Update is called once per frame
@@ -50,6 +52,7 @@ public class Steve : MonoBehaviour
             enemy.GetConsumed(this);
             OnChomp();
             HungerList.Remove(enemy.type);
+            bubble.Populate(this);
         }
         else
         {
