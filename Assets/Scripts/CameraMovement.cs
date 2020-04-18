@@ -7,6 +7,7 @@ public class CameraMovement : MonoBehaviour
     public float heightJump = 4.0f;
     public float cameraMovementSpeed = 1.0f;
     public float heightSpeed = 1.0f;
+    public Vector2 horizontalBounds;
 
     float[] yPositions = new float[3];
 
@@ -51,6 +52,8 @@ public class CameraMovement : MonoBehaviour
                 StartCoroutine(MoveToYPos(--position));
             }
         }
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, horizontalBounds.x, horizontalBounds.y), transform.position.y, transform.position.z);
     }
 
     IEnumerator MoveToYPos(int pos)
