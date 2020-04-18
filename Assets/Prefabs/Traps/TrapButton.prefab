@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTrap: {fileID: 0}
-  ButtonUnpressed: {fileID: 6134751039864755284, guid: ecfe59c4b631d704f9f9ad39f2942f43,
+  ButtonUnpressed: {fileID: 5908450235215022971, guid: 90264813950edf942a0a29ecb6b72fb0,
     type: 3}
-  ButtonPressed: {fileID: -6296917576086021652, guid: ecfe59c4b631d704f9f9ad39f2942f43,
+  ButtonPressed: {fileID: -1956322860838145807, guid: 90264813950edf942a0a29ecb6b72fb0,
     type: 3}
 --- !u!61 &1425524219240978626
 BoxCollider2D:
@@ -115,7 +115,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6134751039864755284, guid: ecfe59c4b631d704f9f9ad39f2942f43,
+  m_Sprite: {fileID: 5908450235215022971, guid: 90264813950edf942a0a29ecb6b72fb0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

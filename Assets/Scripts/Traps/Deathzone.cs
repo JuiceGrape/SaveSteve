@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Deathzone : MonoBehaviour
 {
-    private Crusher myTrap;
+    private Trap myTrap;
 
     private void Start()
     {
-        myTrap = GetComponentInParent<Crusher>();
+        myTrap = GetComponentInParent<Trap>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
