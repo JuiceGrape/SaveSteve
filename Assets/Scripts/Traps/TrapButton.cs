@@ -16,7 +16,7 @@ public class TrapButton : MonoBehaviour
     private SpriteRenderer mySprite;
 
     private float trapCoolDown;
-    private bool isTriggered;
+    private bool isTriggered = false;
 
     private void Start()
     {
@@ -35,9 +35,15 @@ public class TrapButton : MonoBehaviour
     {
         if (!isTriggered)
         {
-            StartCoroutine(cooldownTimer());
-            myTrap.Trigger();
+            isTriggered = true;
+            mySprite.sprite = ButtonPressed;
+            myTrap.ArmTrap();
         }
+    }
+
+    public void activateCooldown()
+    {
+        StartCoroutine(cooldownTimer());
     }
 
 
@@ -48,8 +54,6 @@ public class TrapButton : MonoBehaviour
 
     private IEnumerator cooldownTimer()
     {
-        isTriggered = true;
-        mySprite.sprite = ButtonPressed;
         yield return new WaitForSeconds(trapCoolDown);
         mySprite.sprite = ButtonUnpressed;
         isTriggered = false;

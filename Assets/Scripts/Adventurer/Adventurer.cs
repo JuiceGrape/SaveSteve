@@ -6,7 +6,8 @@ public enum AdventurerType
 {
     BLUE,
     GREEN,
-    PURPLE
+    PURPLE,
+    APPLE
 }
 
 public class Adventurer : MonoBehaviour
@@ -14,8 +15,6 @@ public class Adventurer : MonoBehaviour
     public AdventurerType type;
 
     public float speed = 1;
-    [SerializeField]
-    private List<TrapType> immuneToTraps;
 
     bool isMoving = true;
 
@@ -27,7 +26,7 @@ public class Adventurer : MonoBehaviour
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
     }
 
-    public void AttackedByTrap(TrapType trapType)
+    public void AttackedByTrap()
     {
         Destroy(gameObject);
     }
