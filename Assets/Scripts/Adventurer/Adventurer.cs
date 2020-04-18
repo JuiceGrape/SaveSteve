@@ -1,23 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+
+public enum AdventurerType
+{
+    BASIC
+}
 
 public class Adventurer : MonoBehaviour
 {
-    [SerializeField]
-    private List<TrapType> immuneToTraps;
+    public AdventurerType type;
 
     public float speed = 1;
-
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    [SerializeField]
+    private List<TrapType> immuneToTraps;
 
     private void FixedUpdate() 
     {
@@ -27,5 +23,23 @@ public class Adventurer : MonoBehaviour
     public void AttackedByTrap(TrapType trapType)
     {
 
+    }
+
+    public void AttackSteve(Steve steve)
+    {
+
+    }
+
+    public void GetConsumed(Steve steve)
+    {
+        StartCoroutine(DestroyAfter(0.5f));
+    }
+
+
+    
+    private IEnumerator DestroyAfter(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Destroy(gameObject);
     }
 }
