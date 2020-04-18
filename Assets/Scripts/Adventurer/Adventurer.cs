@@ -21,17 +21,49 @@ public class Adventurer : MonoBehaviour
 
     bool isMoving = true;
 
+    private Rigidbody2D myRigidBody;
+
+    private void Start()
+    {
+        this.myRigidBody = this.GetComponent<Rigidbody2D>();
+    }
+
     private void FixedUpdate() 
     {
         if (isMoving)
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
+            myRigidBody.velocity = new Vector2(speed, 0);
         else
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            myRigidBody.velocity = new Vector2(0, 0);
     }
 
     public void AttackedByTrap()
     {
         Die();
+    }
+
+    public void FallInPit(float middleOfPit)
+    {
+        isMoving = false;
+        myRigidBody.gravityScale = 5;
+        StartCoroutine(fallTurn());
+
+    }
+
+    private IEnumerator fallTurn()
+    {
+        int zRotator = -1;
+        if (UnityEngine.Random.Range(0, 2) == 0)
+        {
+            zRotator = 1;
+        }
+
+        for (int z = 0; z < 90; z++)
+        {
+            this.transform.Rotate(new Vector3(0, 0, zRotator));
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+        }
+
     }
 
     public void AttackSteve(Steve steve)

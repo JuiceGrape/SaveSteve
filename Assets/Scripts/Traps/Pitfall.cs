@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class Pitfall : Trap
 {
-
-    public override void Trigger(GameObject collisionObject)
-    {
-        collisionObject.GetComponent<Adventurer>().AttackedByTrap();
-    }
+    [SerializeField]
+    private float timeTrapIsOpen = 0;
 
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
+        base.OnTriggerEnter2D(collision);
         if (collision.GetComponent<Adventurer>() && isActivated)
         {
-            collision.GetComponent<Adventurer>().AttackedByTrap();
+            collision.GetComponent<Adventurer>().FallInPit(this.transform.position.x);
         }
-        base.OnTriggerEnter2D(collision);
+    }
+
+    private IEnumerator TrapOpenTime()
+    {
+        yield return new WaitForSeconds(timeTrapIsOpen);
+        base.disableTrap();
     }
 }

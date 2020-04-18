@@ -42,7 +42,7 @@ public class Trap : MonoBehaviour
         myCollider.enabled = false;
     }
 
-    public virtual void Trigger(GameObject collisionObject)
+    public virtual void Trigger(GameObject collisionObject = null)
     {
         isActivated = true;
         myAnimator.SetTrigger("TrapTriggered");
@@ -58,7 +58,7 @@ public class Trap : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Adventurer>() && isArmed && !isActivated)
+        if (collision.GetComponent<Adventurer>() && isArmed)
         {
             Trigger(collision.gameObject);
         }
