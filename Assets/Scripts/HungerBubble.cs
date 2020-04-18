@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
-using UnityEngine.UI;
+using TMPro;
 
 public class HungerBubble : MonoBehaviour
 {
-    public Text blue;
-    public Text green;
-    public Text purple;
+    public TextMeshPro blue;
+    public TextMeshPro green;
+    public TextMeshPro purple;
     public void Populate(Steve steve)
     {
         int blueAmount = 0;
@@ -28,11 +28,10 @@ public class HungerBubble : MonoBehaviour
                     purpleAmount++;
                 break;
             }
-
-            blue.text = "x " + blueAmount;
-            green.text = "x " + greenAmount;
-            purple.text = "x " + purpleAmount;
         }
+        blue.text = "x " + blueAmount;
+        green.text = "x " + greenAmount;
+        purple.text = "x " + purpleAmount;
 
     }
 
