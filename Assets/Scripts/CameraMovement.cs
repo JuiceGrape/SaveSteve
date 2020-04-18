@@ -56,7 +56,7 @@ public class CameraMovement : MonoBehaviour
     IEnumerator MoveToYPos(int pos)
     {
         isDoing = true;
-        while(Mathf.Abs(transform.position.y - yPositions[pos]) > 0.1)
+        while(Mathf.Abs(transform.position.y - yPositions[pos]) > 0.05)
         {
             Vector3 targetPos = transform.position;
             targetPos.y = yPositions[pos];
