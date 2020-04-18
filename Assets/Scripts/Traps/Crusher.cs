@@ -40,7 +40,7 @@ public class Crusher : Trap
         deathzone.enabled = true;
     }
 
-    public void finishedAttacking()
+    public void FinishedAttacking()
     {
         isArmed = false;
         myButton.activateCooldown();
