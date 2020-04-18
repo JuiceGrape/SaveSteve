@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject LevelSelect;
-    [SerializeField] private GameObject MainMenuOptions;
+    [SerializeField] private GameObject LevelSelect = null;
+    [SerializeField] private GameObject MainMenuOptions = null;
 
     private void Start()
     {

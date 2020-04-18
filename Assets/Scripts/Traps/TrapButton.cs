@@ -9,9 +9,9 @@ public class TrapButton : MonoBehaviour
     public Trap myTrap;
 
     [SerializeField]
-    private Sprite ButtonUnpressed;
+    private Sprite ButtonUnpressed = null;
     [SerializeField]
-    private Sprite ButtonPressed;
+    private Sprite ButtonPressed = null;
 
     private SpriteRenderer mySprite;
 
