@@ -46,7 +46,6 @@ public class TrapButton : MonoBehaviour
         StartCoroutine(cooldownTimer());
     }
 
-
     private void OnMouseDown()
     {
         buttonWasPressed();
@@ -55,6 +54,11 @@ public class TrapButton : MonoBehaviour
     private IEnumerator cooldownTimer()
     {
         yield return new WaitForSeconds(trapCoolDown);
+        ResetButton();
+    }
+
+    public void ResetButton()
+    {   
         mySprite.sprite = ButtonUnpressed;
         isTriggered = false;
     }

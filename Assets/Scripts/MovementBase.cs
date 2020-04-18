@@ -15,7 +15,8 @@ public class MovementBase : MonoBehaviour
     public Sprite DownSign;
     public Sprite ClosedSign;
     public SpriteRenderer sign;
-     public List<MovementState> PossibleStates;
+    public bool roundRobin = false;
+    public List<MovementState> PossibleStates;
 
     public int currentState;
 
@@ -73,5 +74,7 @@ public class MovementBase : MonoBehaviour
                 enemy.transform.position = LowerTarget.position;
                 break;
         }
+        if (roundRobin)
+            OnMouseDown();
     }
 }

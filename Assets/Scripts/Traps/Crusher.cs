@@ -17,6 +17,8 @@ public class Crusher : Trap
     [SerializeField]
     protected Collider2D deathzone;
 
+    public float FailTime = 5.0f;
+
     public void Start()
     {
         myCollider = GetComponent<Collider2D>();
@@ -26,6 +28,7 @@ public class Crusher : Trap
 
     public void Trigger()
     {
+        isActivated = true;
         myAnimator.SetTrigger("TrapTriggered");
     }
 
@@ -33,6 +36,8 @@ public class Crusher : Trap
     {
         isArmed = true;
         myCollider.enabled = true;
+        if (FailTime > 0)
+            StartCoroutine(FailAfter(FailTime));
     }
 
     public void ActivateDeathzone()
@@ -53,6 +58,19 @@ public class Crusher : Trap
         if (collision.GetComponent<Adventurer>() && isArmed)
         {
             Trigger();
+        }
+    }
+
+    IEnumerator FailAfter(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+
+        if (isArmed && !isActivated)
+        {
+            isArmed = false;
+            myCollider.enabled = false;
+            deathzone.enabled = false;
+            myButton.ResetButton();
         }
     }
 
