@@ -9,4 +9,5 @@ public class Crusher : Trap
     {
         myAnimator.SetTrigger("TrapTriggered");
     }
+
 }
