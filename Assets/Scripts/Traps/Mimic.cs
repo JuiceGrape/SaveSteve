@@ -9,11 +9,6 @@ public class Mimic : Trap
     {
         base.Trigger(null);
         collisionObject.GetComponent<Adventurer>().Die();
-    }
-
-    public override void ArmTrap()
-    {
-        myAnimator.SetTrigger("TrapArmed");
-        base.ArmTrap();
+        FinishedAttacking();
     }
 }
