@@ -74,6 +74,7 @@ public class Tutorial : MonoBehaviour
             yield return new WaitForEndOfFrame();
             time += Time.deltaTime;
         }
+        Camera.GetComponent<Camera>().orthographicSize = endValue;
     }
 
     private IEnumerator moveCameraCoroutine(Vector3 startLocation, Vector3 endLocation, float seconds)
