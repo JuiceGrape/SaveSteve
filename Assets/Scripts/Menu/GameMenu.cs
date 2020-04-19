@@ -47,7 +47,8 @@ public class GameMenu : MonoBehaviour
 
         if (steve.HungerList.Count  == 0)
         {
-            StartCoroutine(SuccesAfter(1.0f));
+            steve.
+            StartCoroutine(SuccesAfter(2.0f));
         }
         else
         {
@@ -88,8 +89,9 @@ public class GameMenu : MonoBehaviour
 
     IEnumerator SuccesAfter(float seconds)
     {
+        yield return new WaitForSeconds(1);
+        steve.Success();
         yield return new WaitForSeconds(seconds);
-
         Success();
     }
 }

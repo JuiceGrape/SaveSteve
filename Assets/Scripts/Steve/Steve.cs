@@ -76,4 +76,9 @@ public class Steve : MonoBehaviour
         menu.Fail();
     }
 
+    public void Success()
+    {
+        animator.SetTrigger("Happy");
+    }
+
 }
