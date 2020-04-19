@@ -6,8 +6,7 @@ public enum AdventurerType
 {
     BLUE,
     GREEN,
-    PURPLE,
-    APPLE
+    PURPLE
 }
 
 public class Adventurer : MonoBehaviour
@@ -23,9 +22,15 @@ public class Adventurer : MonoBehaviour
 
     private Rigidbody2D myRigidBody;
 
+    Spawner spawner;
     private void Start()
     {
         this.myRigidBody = this.GetComponent<Rigidbody2D>();
+    }
+
+    public void SetSpawner(Spawner spawn)
+    {
+        spawner = spawn;
     }
 
     private void FixedUpdate() 
@@ -81,6 +86,8 @@ public class Adventurer : MonoBehaviour
     public void Die()
     {
         Instantiate(blood, transform.position, Quaternion.identity);
+        if (spawner != null)
+            spawner.RemoveAdventurer(gameObject);
         Destroy(gameObject);
     }
 
