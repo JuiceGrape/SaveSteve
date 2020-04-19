@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private GameObject LevelSelect = null;
     [SerializeField] private GameObject MainMenuOptions = null;
+    [SerializeField] private GameObject Credits = null;
 
     private void Start()
     {
@@ -32,12 +33,14 @@ public class MainMenu : MonoBehaviour
     {
         LevelSelect.SetActive(true);
         MainMenuOptions.SetActive(false);
+        Credits.SetActive(false);
     }
 
     public void ShowMainMenu()
     {
         LevelSelect.SetActive(false);
         MainMenuOptions.SetActive(true);
+        Credits.SetActive(true);
     }
     
     public void ExitGame()
