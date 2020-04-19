@@ -101,6 +101,7 @@ MonoBehaviour:
   heightJump: 4
   cameraMovementSpeed: 10
   heightSpeed: 10
+  horizontalBounds: {x: -10, y: 20}
 --- !u!114 &1834921264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,8 +117,8 @@ MonoBehaviour:
   m_AssetsPPU: 32
   m_RefResolutionX: 480
   m_RefResolutionY: 270
-  m_UpscaleRT: 1
-  m_PixelSnapping: 0
+  m_UpscaleRT: 0
+  m_PixelSnapping: 1
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0

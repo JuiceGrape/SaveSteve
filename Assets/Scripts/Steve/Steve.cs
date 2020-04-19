@@ -6,6 +6,8 @@ public class Steve : MonoBehaviour
 {
     public List<AdventurerType> HungerList;
     public HungerBubble bubble;
+
+    public GameMenu menu;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class Steve : MonoBehaviour
     public void OnDeath()
     {
         animator.SetTrigger("Dead");
+        StartCoroutine(FailAfter(1.0f));
     }
 
     public void ChangeHuner(List<AdventurerType> hunger)
@@ -66,4 +69,11 @@ public class Steve : MonoBehaviour
             enemy.AttackSteve(this);
         }
     }
+
+    IEnumerator FailAfter(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        menu.Fail();
+    }
+
 }
