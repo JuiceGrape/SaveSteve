@@ -33,6 +33,7 @@ public class TrapButton : MonoBehaviour
 
     private void buttonWasPressed()
     {
+        Debug.Log("Pressed");
         if (!isTriggered)
         {
             isTriggered = true;

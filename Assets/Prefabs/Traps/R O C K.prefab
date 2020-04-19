@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 217924060869270826}
   - component: {fileID: 217924060869270830}
   - component: {fileID: 217924060869270831}
+  - component: {fileID: 2021287221}
   m_Layer: 0
   m_Name: R O C K
   m_TagString: Untagged
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd1be82bb42c9c4ebaf2911acbf6e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 75
+  rotateSpeed: 150
 --- !u!114 &217924060869270830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +201,7 @@ MonoBehaviour:
   cooldownColor: {r: 0.4509804, g: 0.09019608, b: 0.1764706, a: 1}
   failTimerColor: {r: 0.15686275, g: 0.36078432, b: 0.76862746, a: 1}
   FailTime: 5
+  platform: {fileID: 943251538}
 --- !u!95 &217924060869270831
 Animator:
   serializedVersion: 3
@@ -219,6 +221,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &2021287221
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217924060869270827}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1001 &217924060290647201
 PrefabInstance:
   m_ObjectHideFlags: 0
