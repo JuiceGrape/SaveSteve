@@ -16,7 +16,7 @@ public class TrapButton : MonoBehaviour
     private SpriteRenderer mySprite;
 
     private float trapCoolDown;
-    private bool isTriggered = false;
+    public bool isTriggered = false;
 
     private void Start()
     {

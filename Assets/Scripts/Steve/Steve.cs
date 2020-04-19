@@ -36,7 +36,7 @@ public class Steve : MonoBehaviour
         StartCoroutine(FailAfter(1.0f));
     }
 
-    public void ChangeHuner(List<AdventurerType> hunger)
+    public void ChangeHunger(List<AdventurerType> hunger)
     {
 
         HungerList = hunger;

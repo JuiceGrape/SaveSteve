@@ -18,7 +18,7 @@ public class Adventurer : MonoBehaviour
 
     public float speed = 1;
 
-    bool isMoving = true;
+    public bool isMoving = true;
 
     private Rigidbody2D myRigidBody;
 

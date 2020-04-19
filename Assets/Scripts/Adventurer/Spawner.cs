@@ -16,7 +16,6 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        StartSpawning();
         menu.Spawners.Add(this);
     }
 
