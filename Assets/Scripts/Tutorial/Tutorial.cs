@@ -25,6 +25,16 @@ public class Tutorial : MonoBehaviour
     {
     }
 
+    protected void ShowTutorialTextBubble()
+    {
+        tutorialTextBalloon.SetActive(true);
+    }
+
+    protected void HideTutorialTextBubble()
+    {
+        tutorialTextBalloon.SetActive(false);
+    }
+
     protected void disableTutorialTextButton()
     {
         tutorialTextBalloon.GetComponent<Button>().enabled = false;
