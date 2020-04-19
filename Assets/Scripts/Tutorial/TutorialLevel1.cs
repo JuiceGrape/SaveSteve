@@ -149,7 +149,7 @@ public class TutorialLevel1 : Tutorial
     private void Step10()
     {
         disableTutorialTextButton();
-        tutorialText.text = "These traps remain armed for a few seconds. Now, give it a try!";
+        tutorialText.text = "These traps remain armed for a few seconds. \n Now, give it a try!";
         StartCoroutine(armTrap());
     }
 
