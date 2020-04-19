@@ -63,6 +63,7 @@ public class Trap : MonoBehaviour
         isArmed = false;
         myCollider.enabled = false;
         myButton.ResetButton();
+        isActivated = false;
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
