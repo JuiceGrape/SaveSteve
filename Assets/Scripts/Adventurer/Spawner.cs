@@ -21,14 +21,20 @@ public class Spawner : MonoBehaviour
 
     public void StartSpawning()
     {
-        StartCoroutine(SpawnWithFrequency(delay));
+        StartCoroutine(SpawnAfter(0));
     }
 
-    IEnumerator SpawnWithFrequency(float timing)
+    public void StartSpawningAfter(float seconds)
     {
+        StartCoroutine(SpawnAfter(seconds));
+    }
+
+    IEnumerator SpawnAfter(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
         foreach(Adventurer adventurer in adventurers)
         {
-            yield return new WaitForSeconds(timing);
+            yield return new WaitForSeconds(delay);
             GameObject spawned = Instantiate(adventurer.gameObject, transform.position, Quaternion.identity); 
             spawnedAdventurers++;
             spawned.GetComponent<Adventurer>().SetSpawner(this);

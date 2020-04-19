@@ -23,9 +23,17 @@ public class Adventurer : MonoBehaviour
     private Rigidbody2D myRigidBody;
 
     Spawner spawner;
+
+    Animator animator;
     private void Start()
     {
         this.myRigidBody = this.GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        animator.SetBool("IsMoving", isMoving);
     }
 
     public void SetSpawner(Spawner spawn)
