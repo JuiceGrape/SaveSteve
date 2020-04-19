@@ -151,6 +151,10 @@ MonoBehaviour:
   cooldownTime: 3
   myAnimator: {fileID: 4689251948928106780}
   myButton: {fileID: 5970624616366973294}
+  cooldownBar: {fileID: 7996753367930672004}
+  barFill: {fileID: 5910175599994631519}
+  cooldownColor: {r: 0.4509804, g: 0.09019608, b: 0.1764706, a: 1}
+  failTimerColor: {r: 0.15686275, g: 0.36078432, b: 0.76862746, a: 1}
   FailTime: 5
   deathzone: {fileID: 8152147653993567005}
 --- !u!61 &4689251948928106777
@@ -430,6 +434,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1956322860838145807, guid: 90264813950edf942a0a29ecb6b72fb0,
         type: 3}
+    - target: {fileID: 3452498518264523303, guid: e3e27a10385baaa439465177e613c82a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5301093871635857549, guid: e3e27a10385baaa439465177e613c82a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.281
+      objectReference: {fileID: 0}
+    - target: {fileID: 5301093871635857549, guid: e3e27a10385baaa439465177e613c82a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.489
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852527458467232677, guid: e3e27a10385baaa439465177e613c82a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8444822965876455263, guid: e3e27a10385baaa439465177e613c82a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8444822965876455263, guid: e3e27a10385baaa439465177e613c82a,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8444822965876455263, guid: e3e27a10385baaa439465177e613c82a,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e27a10385baaa439465177e613c82a, type: 3}
 --- !u!4 &5970624616366973283 stripped
@@ -450,3 +489,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5be0b3cbab9b34db7ee2af5f57c25d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7996753367930672004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3452498518264523303, guid: e3e27a10385baaa439465177e613c82a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4689251950759426467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5910175599994631519 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1375489772173053180, guid: e3e27a10385baaa439465177e613c82a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4689251950759426467}
+  m_PrefabAsset: {fileID: 0}
