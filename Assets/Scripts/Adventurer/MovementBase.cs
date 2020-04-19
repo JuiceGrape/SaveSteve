@@ -16,6 +16,7 @@ public class MovementBase : MonoBehaviour
     public Sprite ClosedSign;
     public SpriteRenderer sign;
     public bool roundRobin = false;
+    public bool isClickable = true;
     public List<MovementState> PossibleStates;
 
     public int currentState;
@@ -28,6 +29,27 @@ public class MovementBase : MonoBehaviour
         SetSign();
     }
     void OnMouseDown()
+    {
+        if (isClickable)
+            NextState();
+    }
+
+    public void SetState(MovementState state)
+    {
+        int index = 0;
+        foreach(MovementState sta in PossibleStates)
+        {
+            if (sta  == state)
+            {
+                currentState = index;
+                SetSign();
+                return;
+            }
+            index++;
+        }
+    }
+
+    public void NextState()
     {
         currentState++;
         if(currentState >= PossibleStates.Count)
@@ -75,6 +97,6 @@ public class MovementBase : MonoBehaviour
                 break;
         }
         if (roundRobin)
-            OnMouseDown();
+            NextState();
     }
 }
