@@ -8,6 +8,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject LevelSelect = null;
     [SerializeField] private GameObject MainMenuOptions = null;
     [SerializeField] private GameObject Credits = null;
+    [SerializeField] private string cinematicName;
+
+    public static int previousLevel = 0;
 
     private void Start()
     {
@@ -16,12 +19,25 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        LoadLevel(1);
+        if (previousLevel == 0)
+        {
+            LoadLevel(cinematicName);
+        }
+        else
+        {
+            LoadLevel(previousLevel);
+        }
+        
     }
 
     public void LoadLevel(int id)
     {
         SceneManager.LoadScene(id);
+    }
+
+    public void LoadLevel(string name)
+    {
+        SceneManager.LoadScene(name);
     }
 
     public void EndlessMode()

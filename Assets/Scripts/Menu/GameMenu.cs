@@ -13,6 +13,11 @@ public class GameMenu : MonoBehaviour
 
     public Steve steve;
 
+    void Start()
+    {
+        MainMenu.previousLevel = SceneManager.GetActiveScene().buildIndex;
+    }
+
     public void ToggleEscMenu()
     {
         EscMenu.SetActive(!EscMenu.activeInHierarchy);
