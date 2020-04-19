@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class TutorialLevel1 : Tutorial
 {
-    public Adventurer blueAdventurer;
-    public Adventurer greenAdventurer;
-    public Adventurer secondGreenAdventurer;
+    public Adventurer firstGreenAdventurer;
+    public Adventurer secondGreendAdventurer;
+    public Adventurer thirdGreenAdventurer;
     public GameObject CrusherButton;
 
     private void Start()
@@ -56,8 +56,6 @@ public class TutorialLevel1 : Tutorial
             case 12:
                 Step12();
                 break;
-            case 13:
-                break;
         }
     }
 
@@ -65,9 +63,9 @@ public class TutorialLevel1 : Tutorial
 
         tutorialTextBalloon.SetActive(true);
         ThoughtBubble.SetActive(false);
-        blueAdventurer.isMoving = false;
-        greenAdventurer.isMoving = false;
-        secondGreenAdventurer.isMoving = false;
+        firstGreenAdventurer.isMoving = false;
+        secondGreendAdventurer.isMoving = false;
+        thirdGreenAdventurer.isMoving = false;
         CrusherButton.GetComponent<Collider2D>().enabled = false;
     }
 
@@ -83,7 +81,7 @@ public class TutorialLevel1 : Tutorial
 
     private void Step2()
     {
-        steve.ChangeHunger(new List<AdventurerType>() { AdventurerType.BLUE });
+        steve.ChangeHunger(new List<AdventurerType>() { AdventurerType.GREEN, AdventurerType.BLUE, AdventurerType.BLUE, AdventurerType.BLUE });
         base.zoomCamera(1.5f, 1);
         tutorialText.text = "Steve is also ravenous.";
         ThoughtBubble.SetActive(true);
@@ -97,27 +95,26 @@ public class TutorialLevel1 : Tutorial
     private void Step4()
     {
         base.zoomCamera(2f, 1);
-        tutorialText.text = "He is hungry for some blue adventurers. \n Oh, here is one now.";
+        tutorialText.text = "He is hungry for atleast one green adventurer. \n Oh, here is one now.";
     }
 
     private void Step5()
     {
         tutorialTextBalloon.SetActive(false);
         StartCoroutine(waitForAdventurerToDie());
-        blueAdventurer.isMoving = true;
+        firstGreenAdventurer.isMoving = true;
     }
 
     IEnumerator waitForAdventurerToDie()
     {
-        yield return new WaitUntil(() => blueAdventurer == null);
+        yield return new WaitUntil(() => firstGreenAdventurer == null);
         nextStep();
     }
 
     private void Step6()
     {
         tutorialTextBalloon.SetActive(true);
-        steve.ChangeHunger(new List<AdventurerType>() { AdventurerType.BLUE, AdventurerType.BLUE, AdventurerType.BLUE });
-        tutorialText.text = "That adventurer was delicious, but his tummy was still rumbly.";
+        tutorialText.text = "That adventurer was delicious, but his tummy is still rumbly for some blue adventurers.";
     }
 
     private void Step7()
@@ -129,14 +126,14 @@ public class TutorialLevel1 : Tutorial
     private void Step8() {
         disableTutorialTextButton();
         Camera.GetComponent<PixelPerfectCamera>().enabled = true;
-        tutorialText.text = "They appear to be standing under one of Steve's crushers. \n Press the red button to get rid of this nasty snack.";
+        tutorialText.text = "They appear to be standing under one of Steve's crushers. \n Press the red button to get rid of this snack.";
         StartCoroutine(waitForGreenToDie());
         CrusherButton.GetComponent<Collider2D>().enabled = true;
 
     }
 
     private IEnumerator waitForGreenToDie() {
-        yield return new WaitUntil(() => greenAdventurer == null);
+        yield return new WaitUntil(() => secondGreendAdventurer == null);
         nextStep();
     }
 
@@ -157,8 +154,8 @@ public class TutorialLevel1 : Tutorial
     {
         yield return new WaitUntil(() => CrusherButton.GetComponent<TrapButton>().isTriggered == false);
         yield return new WaitUntil(() => CrusherButton.GetComponent<TrapButton>().isTriggered == true);
-        secondGreenAdventurer.isMoving = true;
-        yield return new WaitUntil(() => secondGreenAdventurer == null);
+        thirdGreenAdventurer.isMoving = true;
+        yield return new WaitUntil(() => thirdGreenAdventurer == null);
         nextStep();
     }
 
