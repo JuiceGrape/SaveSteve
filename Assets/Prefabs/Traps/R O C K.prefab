@@ -195,6 +195,10 @@ MonoBehaviour:
   cooldownTime: 3000
   myAnimator: {fileID: 217924060869270831}
   myButton: {fileID: 1210978461883145324}
+  cooldownBar: {fileID: 3237953832765533830}
+  barFill: {fileID: 1157566321805510749}
+  cooldownColor: {r: 0.4509804, g: 0.09019608, b: 0.1764706, a: 1}
+  failTimerColor: {r: 0.15686275, g: 0.36078432, b: 0.76862746, a: 1}
   FailTime: 5
 --- !u!95 &217924060869270831
 Animator:
@@ -312,3 +316,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5be0b3cbab9b34db7ee2af5f57c25d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3237953832765533830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3452498518264523303, guid: e3e27a10385baaa439465177e613c82a,
+    type: 3}
+  m_PrefabInstance: {fileID: 217924060290647201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1157566321805510749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1375489772173053180, guid: e3e27a10385baaa439465177e613c82a,
+    type: 3}
+  m_PrefabInstance: {fileID: 217924060290647201}
+  m_PrefabAsset: {fileID: 0}
