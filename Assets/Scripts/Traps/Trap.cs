@@ -65,7 +65,6 @@ public class Trap : MonoBehaviour
         myButton.ResetButton();
     }
 
-
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<Adventurer>() && isArmed)
