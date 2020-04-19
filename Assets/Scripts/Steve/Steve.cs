@@ -33,6 +33,13 @@ public class Steve : MonoBehaviour
         animator.SetTrigger("Dead");
     }
 
+    public void ChangeHuner(List<AdventurerType> hunger)
+    {
+
+        HungerList = hunger;
+        bubble.Populate(this);
+    }
+
     void OnChomp()
     {
         animator.SetTrigger("StartEat");
