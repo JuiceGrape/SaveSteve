@@ -1685,7 +1685,10 @@ MonoBehaviour:
     - As brave as they are,{200} they wandered into the cave.
     - Deeper and deeper they went,{200} when they heard a tiny voice.
     - '"Hello stranger", it sounded.{300} "What brings you to my humble little home?"'
-    - The young person sees a green monstrous thing lurking in the corner...
+    - '"If you feed me,{200} I might give you the rank of Dungeon Keeper!"'
+    - '"I do need money, so I might as well try",{200} the young person said.{300}
+      "Where are you anyway?"'
+    - They looked around and saw a green monstrous thing lurking in the corner.
     - This monster also happened to be exceptionally cute.
     onStoryEnd:
       m_PersistentCalls:
@@ -3168,6 +3171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad4f6be86dcbef40bd84c0d02d5cf59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animation: 
 --- !u!212 &6282038703571596876
 SpriteRenderer:
   m_ObjectHideFlags: 0
