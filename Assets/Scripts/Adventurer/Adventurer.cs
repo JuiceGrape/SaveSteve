@@ -51,7 +51,21 @@ public class Adventurer : MonoBehaviour
 
     public void AttackedByTrap()
     {
-        Die();
+        Die(); 
+    }
+
+    public bool CanDodge(Trap trap)
+    {
+        switch(type)
+        {
+            case AdventurerType.BLUE:
+                return trap is Pitfall;
+            case AdventurerType.GREEN:
+                return trap is Mimic;
+            case AdventurerType.PURPLE:
+                return trap is Crusher;
+        }
+        return false;
     }
 
     public void FallInPit(float middleOfPit)
@@ -112,5 +126,16 @@ public class Adventurer : MonoBehaviour
         Instantiate(swoosh, transform.position + new Vector3(0.5f, 0, 0), Quaternion.identity);
         yield return new WaitForSeconds(seconds);
         steve.OnDeath();
+    }
+
+    public void WaitForTime(float seconds)
+    {
+        StartCoroutine(Wait(seconds));
+    }
+    private IEnumerator Wait(float seconds)
+    {
+        isMoving = false;
+        yield return new WaitForSeconds(seconds);
+        isMoving = true;
     }
 }

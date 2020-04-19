@@ -42,7 +42,6 @@ public class Trap : MonoBehaviour
         }
         isArmed = true;
     }
-
     public virtual void FinishedAttacking()
     {
         isArmed = false;
@@ -51,8 +50,11 @@ public class Trap : MonoBehaviour
         myCollider.enabled = false;
     }
 
-    public virtual void Trigger(GameObject collisionObject = null)
+
+    public virtual void Trigger(GameObject collisionObject)
     {
+        if (collisionObject.GetComponent<Adventurer>().CanDodge(this))
+            return;
         isActivated = true;
         myAnimator.SetTrigger("TrapTriggered");
     }

@@ -23,5 +23,4 @@ public class Crusher : Trap
         deathzone.enabled = false;
         base.disableTrap();
     }
-
 }
