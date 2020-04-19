@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -337,18 +337,24 @@ PrefabInstance:
         type: 3}
       propertyPath: adventurers.Array.data[2]
       value: 
-      objectReference: {fileID: 6865896960731054468, guid: e2850b6e07a197a4b9a499724e26b370,
+      objectReference: {fileID: 7245877155407008528, guid: 25d757f971478e546b02a522c4ac3472,
         type: 3}
     - target: {fileID: 2590056853726531833, guid: 8ab12123060588548b53adca986736d5,
         type: 3}
       propertyPath: adventurers.Array.data[3]
       value: 
-      objectReference: {fileID: 7245877155407008528, guid: 25d757f971478e546b02a522c4ac3472,
+      objectReference: {fileID: 6865896960731054468, guid: e2850b6e07a197a4b9a499724e26b370,
+        type: 3}
+    - target: {fileID: 2590056853726531833, guid: 8ab12123060588548b53adca986736d5,
+        type: 3}
+      propertyPath: adventurers.Array.data[1]
+      value: 
+      objectReference: {fileID: 6865896960731054468, guid: e2850b6e07a197a4b9a499724e26b370,
         type: 3}
     - target: {fileID: 2590056853726531833, guid: 8ab12123060588548b53adca986736d5,
         type: 3}
       propertyPath: delay
-      value: 1.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2590056853726531835, guid: 8ab12123060588548b53adca986736d5,
         type: 3}
@@ -763,12 +769,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1098887489, guid: 3fe7f5da3b13f0a44a4f6c51836b5216, type: 3}
       propertyPath: HungerList.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1098887489, guid: 3fe7f5da3b13f0a44a4f6c51836b5216, type: 3}
       propertyPath: menu
       value: 
       objectReference: {fileID: 47680642}
+    - target: {fileID: 1098887489, guid: 3fe7f5da3b13f0a44a4f6c51836b5216, type: 3}
+      propertyPath: HungerList.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1328880896, guid: 3fe7f5da3b13f0a44a4f6c51836b5216, type: 3}
       propertyPath: m_Mesh
       value: 
