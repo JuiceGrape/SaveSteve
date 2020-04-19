@@ -83,6 +83,105 @@ TextureImporter:
   - first:
       213: 4805916324724690053
     second: Steve-v2-Sheet_26
+  - first:
+      213: 5821431438384829218
+    second: Steve-v2-Sheet_0
+  - first:
+      213: 3125267499866119944
+    second: Steve-v2-Sheet_1
+  - first:
+      213: 7358941711578204731
+    second: Steve-v2-Sheet_2
+  - first:
+      213: -8156914529507172654
+    second: Steve-v2-Sheet_3
+  - first:
+      213: -4251727084025938921
+    second: Steve-v2-Sheet_4
+  - first:
+      213: 2611361541871881688
+    second: Steve-v2-Sheet_5
+  - first:
+      213: -2752181386661792858
+    second: Steve-v2-Sheet_6
+  - first:
+      213: -4245594879775905630
+    second: Steve-v2-Sheet_7
+  - first:
+      213: 316139265710501044
+    second: Steve-v2-Sheet_8
+  - first:
+      213: 1221701114779737238
+    second: Steve-v2-Sheet_9
+  - first:
+      213: -5169029285722274693
+    second: Steve-v2-Sheet_10
+  - first:
+      213: -1197924185185329998
+    second: Steve-v2-Sheet_11
+  - first:
+      213: -3897504090797943543
+    second: Steve-v2-Sheet_12
+  - first:
+      213: -1792913009205734303
+    second: Steve-v2-Sheet_13
+  - first:
+      213: -6325845745613861553
+    second: Steve-v2-Sheet_14
+  - first:
+      213: -2139659768743777571
+    second: Steve-v2-Sheet_15
+  - first:
+      213: 3319206300931061649
+    second: Steve-v2-Sheet_16
+  - first:
+      213: -306560203209694692
+    second: Steve-v2-Sheet_17
+  - first:
+      213: 8534948732025267269
+    second: Steve-v2-Sheet_18
+  - first:
+      213: 5107827626130882828
+    second: Steve-v2-Sheet_19
+  - first:
+      213: -6422383017401421517
+    second: Steve-v2-Sheet_20
+  - first:
+      213: -6414450687875123503
+    second: Steve-v2-Sheet_21
+  - first:
+      213: -4667309618024679384
+    second: Steve-v2-Sheet_22
+  - first:
+      213: -5611151792669590821
+    second: Steve-v2-Sheet_23
+  - first:
+      213: 7268702897248725817
+    second: Steve-v2-Sheet_24
+  - first:
+      213: 222696106316155533
+    second: Steve-v2-Sheet_25
+  - first:
+      213: 3987331897567983369
+    second: Steve-v2-Sheet_26
+  - first:
+      213: 1919981440759005326
+    second: Steve-v2-Sheet_27
+  - first:
+      213: 1283385768836670137
+    second: Steve-v2-Sheet_28
+  - first:
+      213: 4388208555999105138
+    second: Steve-v2-Sheet_29
+  - first:
+      213: -5540296147742443245
+    second: Steve-v2-Sheet_30
+  - first:
+      213: 7317389228227004747
+    second: Steve-v2-Sheet_31
+  - first:
+      213: 1083844828154910145
+    second: Steve-v2-Sheet_32
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -184,7 +283,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 512
+        y: 640
         width: 32
         height: 64
       alignment: 0
@@ -194,8 +293,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d7daeb822b87f6e0800000000000000
-      internalID: -1803820145246021676
+      spriteID: 2231839cc01e9c050800000000000000
+      internalID: 5821431438384829218
       vertices: []
       indices: 
       edges: []
@@ -205,7 +304,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 512
+        y: 640
         width: 32
         height: 64
       alignment: 0
@@ -215,8 +314,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2224a84112abab00800000000000000
-      internalID: 840943950551589420
+      spriteID: 80fd7959b3e2f5b20800000000000000
+      internalID: 3125267499866119944
       vertices: []
       indices: 
       edges: []
@@ -226,6 +325,90 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
+        y: 640
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a8c615f76302660800000000000000
+      internalID: 7358941711578204731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de908dd371dcce80800000000000000
+      internalID: -8156914529507172654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 576
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cf9b26eb4def4c0800000000000000
+      internalID: -4251727084025938921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc36b9c7b6d3420800000000000000
+      internalID: 2611361541871881688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 512
         width: 32
         height: 64
@@ -236,92 +419,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed144a96eab9fc6b0800000000000000
-      internalID: -5273825465228574242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 448
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb40ea572a13573e0800000000000000
-      internalID: -2056683080995961669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 448
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2121b245ea3f6ff20800000000000000
-      internalID: 3456217694115402258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 448
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c7d6879256f02bb0800000000000000
-      internalID: -4962695954772338745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 384
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bab68a7a706004700800000000000000
-      internalID: 522424186722347947
+      spriteID: 6a3f49a4c994ec9d0800000000000000
+      internalID: -2752181386661792858
       vertices: []
       indices: 
       edges: []
@@ -331,7 +430,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 384
+        y: 512
         width: 32
         height: 64
       alignment: 0
@@ -341,8 +440,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87f15c636d83013c0800000000000000
-      internalID: -4390947143993188488
+      spriteID: 2a86db273fd9415c0800000000000000
+      internalID: -4245594879775905630
       vertices: []
       indices: 
       edges: []
@@ -352,6 +451,90 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
+        y: 512
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc2a38bcf6236400800000000000000
+      internalID: 316139265710501044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c1528e0ba54f010800000000000000
+      internalID: 1221701114779737238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74cee6504be348b0800000000000000
+      internalID: -5169029285722274693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcdd2aec4e106fe0800000000000000
+      internalID: -1197924185185329998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 384
         width: 32
         height: 64
@@ -362,92 +545,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b96967a8da128ac0800000000000000
-      internalID: -3854488813251761741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82d5c74fe799bcdc0800000000000000
-      internalID: -3617629105115341528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 320
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e07bd4e2c4a23c810800000000000000
-      internalID: 1784316384051574542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 320
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1281b17e208451fc0800000000000000
-      internalID: -3524831956043098079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60bac1c5713e509f0800000000000000
-      internalID: -502746093912806650
+      spriteID: 9055b55eda849e9c0800000000000000
+      internalID: -3897504090797943543
       vertices: []
       indices: 
       edges: []
@@ -457,7 +556,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 256
+        y: 384
         width: 32
         height: 64
       alignment: 0
@@ -467,8 +566,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae0b81613563071f0800000000000000
-      internalID: -1049278982696423190
+      spriteID: 1649d1d0e1b4e17e0800000000000000
+      internalID: -1792913009205734303
       vertices: []
       indices: 
       edges: []
@@ -478,6 +577,90 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
+        y: 384
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d05c46fc41638a0800000000000000
+      internalID: -6325845745613861553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda25d7d6c66e42e0800000000000000
+      internalID: -2139659768743777571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197fb377b80301e20800000000000000
+      internalID: 3319206300931061649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c122a619e11eebbf0800000000000000
+      internalID: -306560203209694692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 256
         width: 32
         height: 64
@@ -488,92 +671,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee3cc5b5f700bd850800000000000000
-      internalID: 6402711842230944750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 192
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13cc16273387a32d0800000000000000
-      internalID: -3298191614737789903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26d60e77f1e97cef0800000000000000
-      internalID: -87927809718063774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 192
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff64fd4017e10df60800000000000000
-      internalID: 8056973204127696639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eac98bdd9f64dd3f0800000000000000
-      internalID: -874464713659343698
+      spriteID: 5446984d6aa327670800000000000000
+      internalID: 8534948732025267269
       vertices: []
       indices: 
       edges: []
@@ -583,7 +682,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 128
+        y: 256
         width: 32
         height: 64
       alignment: 0
@@ -593,8 +692,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c2d3e2beb03f6bc0800000000000000
-      internalID: -3787755165992103228
+      spriteID: c01457dd926a2e640800000000000000
+      internalID: 5107827626130882828
       vertices: []
       indices: 
       edges: []
@@ -604,6 +703,90 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33179444cac1fd6a0800000000000000
+      internalID: -6422383017401421517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d671f7a51b4bf6a0800000000000000
+      internalID: -6414450687875123503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828ffd081a26a3fb0800000000000000
+      internalID: -4667309618024679384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaf1297c2f2122b0800000000000000
+      internalID: -5611151792669590821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 128
         width: 32
         height: 64
@@ -614,92 +797,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 135d5d9f9814afc80800000000000000
-      internalID: -8288240103364111055
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a5971d6b9a3c8c30800000000000000
-      internalID: 4362926578239772068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_22
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7521af725cff9fa0800000000000000
-      internalID: -5791633164516383362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_23
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a820b855bcb8834e0800000000000000
-      internalID: -2001696328936390006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steve-v2-Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c1140d88e7ad63c0800000000000000
-      internalID: -4364647846612037177
+      spriteID: 93bec5816ce9fd460800000000000000
+      internalID: 7268702897248725817
       vertices: []
       indices: 
       edges: []
@@ -709,6 +808,111 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a46d5cdec271300800000000000000
+      internalID: 222696106316155533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907bf1c2c39d55730800000000000000
+      internalID: 3987331897567983369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8088c7a2f425aa10800000000000000
+      internalID: 1919981440759005326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b22d4d9e808fc110800000000000000
+      internalID: 1283385768836670137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27018a49e6c06ec30800000000000000
+      internalID: 4388208555999105138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
         width: 32
         height: 64
@@ -719,14 +923,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 051db5519344cc990800000000000000
-      internalID: -7364436278695440048
+      spriteID: 319b853e10aec13b0800000000000000
+      internalID: -5540296147742443245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Steve-v2-Sheet_26
+      name: Steve-v2-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b498dbfdbb69c8560800000000000000
+      internalID: 7317389228227004747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steve-v2-Sheet_32
       rect:
         serializedVersion: 2
         x: 64
@@ -740,8 +965,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58c477b3f6b02b240800000000000000
-      internalID: 4805916324724690053
+      spriteID: 1c551d5f0279a0f00800000000000000
+      internalID: 1083844828154910145
       vertices: []
       indices: 
       edges: []
