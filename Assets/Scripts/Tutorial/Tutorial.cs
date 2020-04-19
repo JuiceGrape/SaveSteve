@@ -8,7 +8,7 @@ public class Tutorial : MonoBehaviour
 {
     public TextMeshProUGUI tutorialText;
     public GameObject tutorialTextBalloon;
-
+    public GameObject tutorialTextArrow;
     public Steve steve;
     public GameObject ThoughtBubble;
     public GameObject Camera;
@@ -28,11 +28,13 @@ public class Tutorial : MonoBehaviour
     protected void disableTutorialTextButton()
     {
         tutorialTextBalloon.GetComponent<Button>().enabled = false;
+        tutorialTextArrow.SetActive(false);
     }
 
     protected void enableTutorialTextButton()
     {
         tutorialTextBalloon.GetComponent<Button>().enabled = true;
+        tutorialTextArrow.SetActive(true);
     }
 
     public void nextStep()
