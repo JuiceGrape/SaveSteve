@@ -39,10 +39,8 @@ public class Spawner : MonoBehaviour
     public void RemoveAdventurer(GameObject adventurer)
     {
         spawnedAdventurers--;
-        Debug.Log("Time to begin");
         if (IsDone())
         {
-            Debug.Log("Isn't it");
             menu.DoneSpawning();
         }
     }
