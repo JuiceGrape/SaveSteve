@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2069,7 +2069,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300004, guid: 061b63d975d324c42b7fe3f99bb7ff23, type: 3}
+  m_Sprite: {fileID: 7223950226953391895, guid: 763aba68fb7824948889bb45d96418c9,
+    type: 3}
   m_Color: {r: 0.078431375, g: 0.0627451, b: 0.07450981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
