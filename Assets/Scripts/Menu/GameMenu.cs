@@ -14,11 +14,10 @@ public class GameMenu : MonoBehaviour
 
     public Steve steve;
 
-    public static bool[] completedLevels = new bool[14];
+    public static bool[] completedLevels = new bool[15];
 
     void Start()
     {
-        MainMenu.previousLevel = SceneManager.GetActiveScene().buildIndex;
         showAdventureImmunities();
     }
 

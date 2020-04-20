@@ -8,7 +8,7 @@ public class ShowCompletedLevels : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < GameMenu.completedLevels.Length; i++)
+        for(int i = 1; i < GameMenu.completedLevels.Length; i++)
         {
             if (GameMenu.completedLevels[i])
             {

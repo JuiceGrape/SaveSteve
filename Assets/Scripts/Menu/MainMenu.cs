@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject Credits = null;
     [SerializeField] private string cinematicName;
 
-    public static int previousLevel = 0;
+    public static bool hasSeenCinematic = false;
 
     private void Start()
     {
@@ -19,13 +19,22 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        if (previousLevel == 0)
+        if (!hasSeenCinematic)
         {
             LoadLevel(cinematicName);
+            hasSeenCinematic = true;
         }
         else
         {
-            LoadLevel(previousLevel);
+            for(int i = 1; i < GameMenu.completedLevels.Length; i++)
+            {
+                if (!GameMenu.completedLevels[i])
+                {
+                    LoadLevel(i);
+                    return;
+                }   
+            }
+            LoadLevel(cinematicName);
         }
         
     }
