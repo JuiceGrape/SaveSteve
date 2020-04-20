@@ -8,6 +8,7 @@ public class GameMenu : MonoBehaviour
     public GameObject EscMenu;
     public GameObject FailMenu;
     public GameObject SuccesMenu;
+    public GameObject Immunities;
 
     public List<Spawner> Spawners;
 
@@ -18,6 +19,7 @@ public class GameMenu : MonoBehaviour
     void Start()
     {
         MainMenu.previousLevel = SceneManager.GetActiveScene().buildIndex;
+        showAdventureImmunities();
     }
 
     public void ToggleEscMenu()
@@ -100,5 +102,13 @@ public class GameMenu : MonoBehaviour
         steve.Success();
         yield return new WaitForSeconds(seconds);
         Success();
+    }
+
+    public void showAdventureImmunities()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= 9)
+        {
+            Immunities.SetActive(true);
+        }
     }
 }
