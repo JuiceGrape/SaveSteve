@@ -103,7 +103,7 @@ public class Adventurer : MonoBehaviour
     public void GetConsumed(Steve steve)
     {
         isMoving = false;
-        StartCoroutine(DestroyAfter(0.5f));
+        StartCoroutine(DestroyAfter(0.7f));
     }
 
     public void Die()

@@ -9,11 +9,14 @@ public class Steve : MonoBehaviour
 
     public GameMenu menu;
     Animator animator;
+
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         animator = this.GetComponent<Animator>();
         bubble.Populate(this);
+        audioSource = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -46,6 +49,11 @@ public class Steve : MonoBehaviour
     void OnChomp()
     {
         animator.SetTrigger("StartEat");
+    }
+
+    void PlayChomp()
+    {
+        audioSource.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D other) 

@@ -118,12 +118,12 @@ public class TutorialLevel4 : Tutorial
     private void Step5()
     {
         ShowTutorialTextBubble();
-        tutorialText.text = "These entrances change their exit with every visitor they get.";
+        tutorialText.text = "Every time an adventurer goes through a door, the destination of the door will change to it's next possible option.";
     }
 
     private void Step6()
     {
-        tutorialText.text = "alternatively, you can click on the sign or entrance to change it's destination. \n Give it a try! Make it so the next adventurer stays on the same floor.";
+        tutorialText.text = "alternatively, you can click on the sign to change it's destination. \n Give it a try! Make it so the next adventurer stays on the same floor.";
         StartCoroutine(WaitForEntrance());
     }
 
