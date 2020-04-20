@@ -68,7 +68,7 @@ public class TutorialLevel9 : Tutorial
 
     protected override void setup()
     {
-        rockButton.GetComponent<Collider2D>().enabled = true;
+        rockButton.GetComponent<Collider2D>().enabled = false;
         stopAllAdventurers();
         purple.gameObject.SetActive(false);
         blue.gameObject.SetActive(false);
