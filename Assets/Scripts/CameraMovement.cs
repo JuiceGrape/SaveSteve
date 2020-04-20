@@ -28,16 +28,16 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(new Vector2(-cameraMovementSpeed * Time.deltaTime, 0));
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(new Vector2(cameraMovementSpeed * Time.deltaTime, 0));
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             
             if (!isDoing && position < 2)
@@ -45,7 +45,7 @@ public class CameraMovement : MonoBehaviour
                 StartCoroutine(MoveToYPos(++position));
             }
         }
-        else if (Input.GetKeyDown(KeyCode.S))
+        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (!isDoing && position > 0)
             {
