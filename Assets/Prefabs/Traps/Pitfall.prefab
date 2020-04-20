@@ -250,6 +250,7 @@ MonoBehaviour:
   failTimerColor: {r: 0.15686275, g: 0.36078432, b: 0.76862746, a: 1}
   FailTime: 5
   timeTrapIsOpen: 0
+  adventurers: []
 --- !u!61 &1845710235973252059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -453,7 +454,7 @@ PrefabInstance:
     - target: {fileID: 1425524219240978624, guid: e3e27a10385baaa439465177e613c82a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.75
+      value: 2.572
       objectReference: {fileID: 0}
     - target: {fileID: 1425524219240978624, guid: e3e27a10385baaa439465177e613c82a,
         type: 3}

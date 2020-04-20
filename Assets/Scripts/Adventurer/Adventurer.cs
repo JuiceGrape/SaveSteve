@@ -65,6 +65,8 @@ public class Adventurer : MonoBehaviour
                 return trap is Mimic;
             case AdventurerType.PURPLE:
                 return trap is Crusher;
+            case AdventurerType.GOLDEN:
+                return true;
         }
         return false;
     }

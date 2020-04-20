@@ -13,6 +13,8 @@ public class GameMenu : MonoBehaviour
 
     public Steve steve;
 
+    public static bool[] completedLevels = new bool[14];
+
     void Start()
     {
         MainMenu.previousLevel = SceneManager.GetActiveScene().buildIndex;
@@ -52,7 +54,6 @@ public class GameMenu : MonoBehaviour
 
         if (steve.HungerList.Count  == 0)
         {
-            steve.
             StartCoroutine(SuccesAfter(2.0f));
         }
         else
@@ -89,6 +90,7 @@ public class GameMenu : MonoBehaviour
     public void Success()
     {
         Time.timeScale = 0;
+        completedLevels[SceneManager.GetActiveScene().buildIndex] = true;
         SuccesMenu.SetActive(true);
     }
 
