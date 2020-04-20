@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialLevel9 : Tutorial
 {
@@ -13,6 +14,8 @@ public class TutorialLevel9 : Tutorial
     public TrapButton crusherButton;
 
     public TrapButton rockButton;
+
+    public GameObject StartSpawningButton;
 
     private void Start()
     {
@@ -199,12 +202,14 @@ public class TutorialLevel9 : Tutorial
     {
         rockButton.GetComponent<Collider2D>().enabled = true;
         yield return new WaitUntil(() => purple == null);
-        tutorialText.text = "We did it! Steve is safe!";
+        tutorialText.text = "The boulder did it's thing! But more adventurers are coming, and steve doesn't want any of it.";
         enableTutorialTextButton();
     }
 
     private void Step11()
     {
-        //End level
+        HideTutorialTextBubble();
+        StartSpawningButton.SetActive(true);
+        Camera.GetComponent<CameraMovement>().enabled = true;
     }
 }
