@@ -19,20 +19,6 @@ public class Steve : MonoBehaviour
         audioSource = this.GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            OnDeath();
-        }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            OnChomp();
-        }
-    }
-
     public void OnDeath()
     {
         animator.SetTrigger("Dead");

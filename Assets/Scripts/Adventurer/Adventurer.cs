@@ -36,7 +36,7 @@ public class Adventurer : MonoBehaviour
     {
         animator.SetBool("IsMoving", isMoving);
 
-        if (transform.position.y < 10)
+        if (transform.position.y < -10)
         {
             Die();
         }
