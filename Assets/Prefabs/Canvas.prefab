@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 305040075}
   - component: {fileID: 305040074}
   m_Layer: 5
-  m_Name: immenent
+  m_Name: imminent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Immenent Adventurers:'
+  m_text: 'Imminent Adventurers:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de9e683fcea3edf4bb4518bbebcff624, type: 2}
   m_sharedMaterial: {fileID: 2548532108030214130, guid: de9e683fcea3edf4bb4518bbebcff624,
