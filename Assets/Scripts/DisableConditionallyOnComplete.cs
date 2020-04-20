@@ -13,7 +13,7 @@ public class DisableConditionallyOnComplete : MonoBehaviour
         if (!shouldComplete)
             shouldDisable = true;
         
-        for (int i = 0; i < GameMenu.completedLevels.Length; i++)
+        for (int i = 1; i < GameMenu.completedLevels.Length; i++)
         {
             if(shouldComplete)
             {

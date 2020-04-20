@@ -35,6 +35,11 @@ public class Adventurer : MonoBehaviour
     void Update()
     {
         animator.SetBool("IsMoving", isMoving);
+
+        if (transform.position.y < 10)
+        {
+            Die();
+        }
     }
 
     public void SetSpawner(Spawner spawn)
