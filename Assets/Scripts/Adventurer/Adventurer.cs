@@ -6,7 +6,8 @@ public enum AdventurerType
 {
     BLUE,
     GREEN,
-    PURPLE
+    PURPLE,
+    GOLDEN
 }
 
 public class Adventurer : MonoBehaviour

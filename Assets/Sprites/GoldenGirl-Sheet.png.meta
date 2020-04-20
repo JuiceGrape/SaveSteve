@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: e3ed1ac403705334fa7b83c64cbc5eb9
+guid: b7af1b820c57d554b9c1871cda5658b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7913889793255504678
-    second: SmallFaces2-Sheet_0
+      213: -7087343516053215905
+    second: GoldenGirl-Sheet_0
   - first:
-      213: 3204226677446759167
-    second: SmallFaces2-Sheet_1
+      213: -6112292163858748765
+    second: GoldenGirl-Sheet_1
   - first:
-      213: -4576318039563788441
-    second: SmallFaces2-Sheet_2
+      213: 3583755141896013594
+    second: GoldenGirl-Sheet_2
   - first:
-      213: -1486323809078249232
-    second: SmallFaces2-Sheet_0
+      213: -1564285263375655085
+    second: GoldenGirl-Sheet_3
   - first:
-      213: -3904571844370512861
-    second: SmallFaces2-Sheet_1
+      213: -5546836990312748029
+    second: GoldenGirl-Sheet_4
   - first:
-      213: -7815470153945348009
-    second: SmallFaces2-Sheet_2
-  - first:
-      213: -7585756332491374277
-    second: SmallFaces2-Sheet_3
+      213: -5742319215518166957
+    second: GoldenGirl-Sheet_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,13 +105,76 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallFaces2-Sheet_0
+      name: GoldenGirl-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55ea7c5f92b4ad90800000000000000
+      internalID: -7087343516053215905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldenGirl-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaabc949a6cc2ba0800000000000000
+      internalID: -6112292163858748765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldenGirl-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1701b2605e0cb130800000000000000
+      internalID: 3583755141896013594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldenGirl-Sheet_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,41 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f87faade548f5be0800000000000000
-      internalID: -1486323809078249232
+      spriteID: 35f9d1547da8a4ae0800000000000000
+      internalID: -1564285263375655085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallFaces2-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 324cd48489c20d9c0800000000000000
-      internalID: -3904571844370512861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SmallFaces2-Sheet_2
+      name: GoldenGirl-Sheet_4
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7588b699d4fd98390800000000000000
-      internalID: -7815470153945348009
+      spriteID: 30c696d452da503b0800000000000000
+      internalID: -5546836990312748029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallFaces2-Sheet_3
+      name: GoldenGirl-Sheet_5
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b318e218ecaf9b690800000000000000
-      internalID: -7585756332491374277
+      spriteID: 350d32cf81f2f40b0800000000000000
+      internalID: -5742319215518166957
       vertices: []
       indices: 
       edges: []
